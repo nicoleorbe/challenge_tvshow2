@@ -1,0 +1,36 @@
+<div class="characters text-center m-5">
+  <h2>Meet the Cast</h2>
+  <div class="row">
+    <div class="col-md-2">
+      <img src="images/characters/mario.png" alt="Mario" class="character" />
+      <h4 class="char-name">Mario</h4>
+      <h5 class="actor">Chris Pratt</h5>
+    </div>
+    <div class="col-md-2">
+      <img src="images/characters/luigi.png" alt="Luigi" class="character" />
+      <h4 class="char-name">Luigi</h4>
+      <h5 class="actor">Charlie Day</h5>
+    </div>
+    <div class="col-md-2">
+      <img src="images/characters/peach.png" alt="Peach" class="character" />
+      <h4 class="char-name">Princess Peach</h4>
+      <h5 class="actor">Anya Taylor-Joy</h5>
+    </div>
+
+    <div class="col-md-2">
+      <img src="images/characters/toad.png" alt="Toad" class="character" />
+      <h4 class="char-name">Toad</h4>
+      <h5 class="actor">Keegan-Michael Key</h5>
+    </div>
+    <div class="col-md-2">
+      <img src="images/characters/dk.png" alt="Donkey Kong" class="character" />
+      <h4 class="char-name">Donkey Kong</h4>
+      <h5 class="actor">Seth Rogen</h5>
+    </div>
+    <div class="col-md-2">
+      <img src="images/characters/bowser.png" alt="Bowser" class="character" />
+      <h4 class="char-name">Bowser</h4>
+      <h5 class="actor">Jack Black</h5>
+    </div>
+  </div>
+</div>
