@@ -385,6 +385,9 @@ footer a:hover {
   .card-footer {
     margin: 0;
   }
+  .power-ups {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
