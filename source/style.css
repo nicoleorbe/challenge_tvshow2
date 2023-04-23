@@ -407,20 +407,32 @@ footer a:hover {
     text-align: center !important;
   }
 }
+
 @media (max-width: 768px) {
   .grid-characters {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px;
   }
   .grid-interviews,
-  .grid-3-columns-with-first-narrow {
+  .grid-videos,
+  .grid-buzz .grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr;
     text-align: center !important;
+    margin: 0 30px;
   }
   .char-name {
     font-size: 30px;
   }
   .actor {
     font-size: larger;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  footer {
+    padding: 10px;
   }
 }
 
