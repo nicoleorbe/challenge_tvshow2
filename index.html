@@ -4,478 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="https://use.typekit.net/tsr2kmc.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/rwj1gow.css" />
+    <link
+      rel="shortcut icon"
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/382/original/Yellowstone_Dutton_Ranch_logo.png?1705763039"
+      type="image/x-icon"
+    />
     <script
       src="https://kit.fontawesome.com/783e3281ae.js"
       crossorigin="anonymous"
     ></script>
-    <title>Super Mario Bros | The Movie 2023</title>
-    <style>
-      :root {
-        --font: "proxima-nova", sans-serif;
-        --red: rgb(242, 32, 18);
-        --blue: rgb(0, 55, 142);
-        --light-blue: #023281;
-        --button-hover-transiton: all 200ms ease-in-out;
-        --button-border-radius: 30px;
-        --box-shadow: 10px 10px 20px rgba(0, 55, 142, 0.3);
-      }
 
-      body {
-        font-family: "proxima-nova", sans-serif;
-        margin: 0;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        text-transform: uppercase;
-      }
-
-      h1 {
-        font-size: 96px;
-      }
-
-      h2 {
-        text-align: center;
-        font-size: 72px;
-        line-height: 72px;
-        padding-top: 50px;
-        margin-top: 0;
-      }
-
-      h3 {
-        margin-top: 0;
-      }
-
-      h4 {
-        text-align: center;
-        font-size: 24px;
-        line-height: 24px;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      a {
-        text-decoration: none;
-        color: white;
-      }
-
-      p {
-        font-weight: 400;
-      }
-
-      button {
-        background: var(--red);
-        text-decoration: none;
-        padding: 15px 20px;
-        border: none;
-        border-radius: var(--button-border-radius);
-        transition: var(--button-hover-transiton);
-        box-shadow: var(--box-shadow);
-        font-weight: 500;
-        font-size: 18px;
-        font-family: var(--font);
-      }
-
-      header {
-        display: flex;
-        margin: 0 auto;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/780/original/the-super-mario-bros-movie-2023.jpg?1686777458");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        text-align: center;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-      }
-
-      button:hover {
-        background: white;
-      }
-
-      a:hover {
-        color: var(--red);
-      }
-
-      /* a:hover {
-  color: var(--blue);
-} */
-
-      .hero {
-        color: white;
-      }
-      .hero h1 {
-        line-height: 60px;
-        font-size: 96px;
-        display: inline;
-      }
-
-      .hero h2 {
-        font-size: 36px;
-        margin: 0;
-        padding-top: 20px;
-      }
-
-      .hero h3 {
-        letter-spacing: 4px;
-      }
-
-      .arrow-down .fa-arrow-down {
-        font-size: 72px;
-      }
-
-      .fa-arrow-down a {
-        color: white;
-      }
-
-      .meet-cast,
-      .interviews h2 {
-        color: var(--blue);
-      }
-
-      .buzz h2 {
-        color: white;
-      }
-
-      .meet-cast,
-      .interviews {
-        padding-bottom: 50px;
-      }
-
-      .grid {
-        display: grid;
-        grid-gap: 10px;
-      }
-
-      footer .grid {
-        grid-gap: 30px;
-      }
-
-      .grid-characters {
-        margin: 0 50px;
-        grid-template-columns: repeat(6, 1fr);
-      }
-
-      .grid-videos,
-      .grid-buzz {
-        margin: 0 100px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-      }
-
-      .grid-interviews {
-        margin: 0 100px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 30px;
-      }
-
-      .grid-3-columns-with-first-narrow {
-        margin: 30px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-      }
-      .character {
-        width: 100%;
-        border-radius: 6px;
-        margin: 0 auto;
-        box-shadow: var(--box-shadow);
-      }
-
-      .character:hover {
-        filter: brightness(108%) contrast(101%) grayscale(101%) saturate(101%);
-      }
-
-      .char-name,
-      .actor {
-        display: block;
-        text-align: center;
-      }
-
-      .char-name {
-        font-size: 22px;
-        line-height: 22px;
-        color: var(--red);
-        margin-top: 10px;
-        margin-bottom: 0;
-      }
-
-      .actor {
-        font-size: 16px;
-        color: var(--blue);
-        margin-top: 2px;
-      }
-
-      .card {
-        background: white;
-        margin: 0 0 30px;
-        box-shadow: var(--box-shadow);
-      }
-
-      .card-title {
-        padding: 20px 20px 10px;
-      }
-      .card-body {
-        padding: 10px 30px;
-      }
-
-      .card-footer {
-        padding: 20px;
-        text-align: center;
-      }
-
-      .buzz {
-        background-color: var(--red);
-        margin: 0 auto;
-        padding-bottom: 100px;
-      }
-
-      .buzz p {
-        color: var(--blue);
-      }
-
-      .buzz button {
-        background: var(--blue);
-        font-weight: 800;
-        padding-bottom: 20px;
-      }
-
-      .buzz button:hover {
-        background: white;
-        border: solid 3px var(--red);
-      }
-
-      .buzz a:hover {
-        color: var(--blue);
-        font-weight: 800;
-      }
-
-      .buzz-image {
-        max-width: 100%;
-        display: block;
-      }
-
-      .buzz-video {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-      }
-
-      .trailers {
-        background-color: var(--blue);
-        margin: 0 auto;
-        padding-bottom: 100px;
-      }
-
-      .trailers h2 {
-        color: white;
-      }
-
-      .video {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        border-radius: 8px;
-      }
-
-      .interviews {
-        margin: 0 auto;
-        padding-bottom: 100px;
-      }
-
-      .twitter-tweet iframe {
-        width: 100% !important;
-        margin: 0 auto !important;
-        border-radius: 12px !important;
-        box-shadow: var(--box-shadow);
-      }
-
-      .power-ups {
-        background-color: blue;
-        padding: 20px 200px 80px;
-      }
-
-      .power-ups h2 {
-        color: white;
-      }
-
-      table {
-        color: white;
-        border-spacing: 0;
-      }
-
-      th {
-        background-color: var(--red);
-        height: 40px;
-      }
-
-      td {
-        border-bottom: 2px solid white;
-      }
-
-      footer {
-        color: white;
-        background-image: linear-gradient(
-            rgba(0, 55, 142, 0.8),
-            rgba(0, 55, 142, 0.8)
-          ),
-          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/778/original/super_mario_bros_movie.jpg?1686777440");
-
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 30px;
-      }
-
-      footer h3 {
-        font-size: 16px;
-        line-height: 16px;
-      }
-
-      footer p {
-        font-size: 16px;
-        line-height: 24px;
-      }
-
-      footer ul {
-        padding: 0;
-      }
-
-      footer li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      footer a {
-        color: white;
-      }
-
-      footer a:hover {
-        color: var(--red);
-      }
-
-      .playlist {
-        padding: 0 50px;
-      }
-      .site-info {
-        color: white;
-        text-align: center;
-        margin-bottom: 5px;
-        font-size: 16px;
-      }
-
-      .site-info a {
-        color: var(--red);
-        font-weight: 800;
-        text-decoration: none;
-      }
-
-      .site-info a:hover {
-        text-decoration: underline;
-      }
-
-      .copyright {
-        font-size: 12px;
-        line-height: 12px;
-      }
-
-      @media (max-width: 1200px) {
-        .grid-interviews {
-          grid-template-columns: 1fr 1fr;
-          text-align: center !important;
-        }
-
-        .grid-3-columns-with-first-narrow {
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .card-body {
-          display: none;
-        }
-
-        .card-footer {
-          margin: 0;
-        }
-        .power-ups {
-          display: none;
-        }
-      }
-
-      @media (max-width: 1000px) {
-        .hero h1 {
-          font-size: 72px;
-        }
-        .hero h2 {
-          font-size: 24px;
-        }
-        .grid-characters {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .grid-videos,
-        .grid-buzz {
-          grid-template-columns: repeat(1, 1fr);
-          text-align: center !important;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .grid-characters {
-          grid-template-columns: repeat(2, 1fr);
-          margin: 0 30px;
-        }
-        .grid-interviews,
-        .grid-videos,
-        .grid-buzz .grid-3-columns-with-first-narrow {
-          grid-template-columns: 1fr;
-          text-align: center !important;
-          margin: 0 30px;
-        }
-        .char-name {
-          font-size: 30px;
-        }
-        .actor {
-          font-size: larger;
-        }
-        h2 {
-          font-size: 48px;
-          line-height: 48px;
-        }
-
-        footer {
-          padding: 10px;
-        }
-      }
-
-      @media (max-width: 400px) {
-        .grid-characters {
-          grid-template-columns: repeat(1, 1fr);
-          text-align: center;
-        }
-
-        .char-name {
-          font-size: 30px;
-        }
-        .actor {
-          font-size: larger;
-        }
-      }
-    </style>
+    <title>Yellowstone | Can't Miss TV</title>
+    <style></style>
   </head>
   <body>
     <header>
       <div class="hero">
-        <h3>.NEW MOVIE.</h3>
-        <h1>SUPER MARIO BROS</h1>
-        <div class="arrow-down">
-          <a href="#trailers"><i class="fa-solid fa-arrow-down"></i></a>
-        </div>
+        <h3>.MUST SEE TV.</h3>
+        <h1>Yellowstone</h1>
       </div>
       <!-- <div>
         <a href="#trailers"><i class="fa-solid fa-arrow-down"></i></a>
@@ -483,22 +31,13 @@
     </header>
     <main>
       <section class="trailers" id="trailers">
-        <h2>Get a Sneak Peek</h2>
+        <h2>Sneak Peeks</h2>
         <div class="grid grid-videos">
           <div>
+            <h4>Season 1</h4>
             <iframe
               class="video"
-              src="https://www.youtube.com/embed/TnGl01FkMMo"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div>
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/RjNcTBXTk4I"
+              src="https://www.youtube.com/embed/jr32f0rnK1o?si=bB-OQ44WFKa7sVcL"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -506,14 +45,54 @@
             ></iframe>
           </div>
           <div>
+            <h4>Season 2</h4>
             <iframe
               class="video"
-              src="https://www.youtube.com/embed/KydqdKKyGEk"
+              src="https://www.youtube.com/embed/ZXLZnr26BPI?si=390b37nutzCAZyYx"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          </div>
+          <div>
+            <h4>Season 3</h4>
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/Vx-i7fbxyKM?si=GwzaA2LXzzMgTUfo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div>
+            <h4>Season 5</h4>
+            <blockquote class="twitter-tweet" data-media-max-width="560">
+              <p lang="en" dir="ltr">
+                Power has a price. The official
+                <a
+                  href="https://twitter.com/hashtag/YellowstoneTV?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#YellowstoneTV</a
+                >
+                season 5 trailer is HERE! See you on Sunday November 13.
+                Don&#39;t miss the special two-hour premiere event, only on
+                <a href="https://twitter.com/paramountnet?ref_src=twsrc%5Etfw"
+                  >@ParamountNet</a
+                >.
+                <a href="https://t.co/HLLNcCdDmn">pic.twitter.com/HLLNcCdDmn</a>
+              </p>
+              &mdash; Yellowstone (@Yellowstone)
+              <a
+                href="https://twitter.com/Yellowstone/status/1575455356909649920?ref_src=twsrc%5Etfw"
+                >September 29, 2022</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
           </div>
         </div>
       </section>
@@ -523,57 +102,111 @@
         <div class="grid grid-characters">
           <div>
             <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/784/original/mario.png?1686777491"
-              alt="Mario"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/393/original/John.png?1705768601"
+              alt="Kevin Costner as John Dutton"
               class="character"
             />
-            <h4 class="char-name">Mario</h4>
-            <h5 class="actor">Chris Pratt</h5>
+            <h4 class="char-name">Josh Dutton</h4>
+            <h5 class="actor">Kevin Costner</h5>
           </div>
           <div>
             <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/783/original/luigi.png?1686777485"
-              alt="Luigi"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/391/original/Beth.png?1705768580"
+              alt="Kelly Reilly as Beth Dutton"
               class="character"
             />
-            <h4 class="char-name">Luigi</h4>
-            <h5 class="actor">Charlie Day</h5>
+            <h4 class="char-name">Beth Dutton</h4>
+            <h5 class="actor">Kelly Reilly</h5>
           </div>
           <div>
             <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/785/original/peach.png?1686777498"
-              alt="Peach"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/394/original/Kayce.png?1705768608"
+              alt="Luke Grimes as Kayce Dutton"
               class="character"
             />
-            <h4 class="char-name">Princess Peach</h4>
-            <h5 class="actor">Anya Taylor-Joy</h5>
+            <h4 class="char-name">Kayce Dutton</h4>
+            <h5 class="actor">Luke Grimes</h5>
           </div>
           <div>
             <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/786/original/toad.png?1686777506"
-              alt="Toad"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/392/original/Jamie.png?1705768594"
+              alt="Wes Bentley as Jamie Dutton"
               class="character"
             />
-            <h4 class="char-name">Toad</h4>
-            <h5 class="actor">Keegan-Michael Key</h5>
+            <h4 class="char-name">Jamie Dutton</h4>
+            <h5 class="actor">Wes Bentley</h5>
           </div>
           <div>
             <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/782/original/dk.png?1686777478"
-              alt="Donkey Kong"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/396/original/Rip.png?1705768622"
+              alt="Cole Hauser as Rip Wheeler"
               class="character"
             />
-            <h4 class="char-name">Donkey Kong</h4>
-            <h5 class="actor">Seth Rogen</h5>
+            <h4 class="char-name">Rip Wheeler</h4>
+            <h5 class="actor">Cole Hauser</h5>
           </div>
           <div>
             <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/781/original/bowser.png?1686777472"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/395/original/Monica.png?1705768615"
               alt="Bowser"
               class="character"
             />
-            <h4 class="char-name">Bowser</h4>
-            <h5 class="actor">Jack Black</h5>
+            <h4 class="char-name">Monica Long</h4>
+            <h5 class="actor">Kelsey Asbille</h5>
+          </div>
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/414/original/jimmy.png?1706365033"
+              alt="Jefferson White as Jimmy"
+              class="character"
+            />
+            <h4 class="char-name">Jimmy</h4>
+            <h5 class="actor">Jefferson White</h5>
+          </div>
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/415/original/lloyd.png?1706365040"
+              alt="Forrie J. Smith as Lloyd"
+              class="character"
+            />
+            <h4 class="char-name">Lloyd</h4>
+            <h5 class="actor">Forrie J. Smith</h5>
+          </div>
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/416/original/ryan.png?1706365729"
+              alt="Ian Bohen as Ryan"
+              class="character"
+            />
+            <h4 class="char-name">Ryan</h4>
+            <h5 class="actor">Ian Bohen</h5>
+          </div>
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/424/original/colby.png?1706366458"
+              alt="Denim Richards as Colby"
+              class="character"
+            />
+            <h4 class="char-name">Colby</h4>
+            <h5 class="actor">Denim Richards</h5>
+          </div>
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/417/original/teeter.png?1706365738"
+              alt="Jennifer Landon as Teeter"
+              class="character"
+            />
+            <h4 class="char-name">Teeter</h4>
+            <h5 class="actor">Jennifer Landon</h5>
+          </div>
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/419/original/chief.png?1706366077"
+              alt="Chief Thomas"
+              class="character"
+            />
+            <h4 class="char-name">Chief Thomas</h4>
+            <h5 class="actor">Gil Birmingham</h5>
           </div>
         </div>
       </section>
@@ -582,31 +215,26 @@
         <div class="grid grid-buzz">
           <div class="card">
             <div class="card-header">
-              <iframe
-                class="buzz-video"
-                src="https://www.youtube.com/embed/imSefM4GPpE"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/792/original/Untitled_design_%282%29.png?1707572463"
+                alt=""
+                class="buzz-image"
+              />
             </div>
-            <div class="card-title"><h4>Jack Black Getting Oscar Buzz</h4></div>
+            <div class="card-title"><h4>The Final Season is Near</h4></div>
             <div class="card-body">
               <p>
-                Is “Peaches” from “The Super Mario Bros. Movie” one of the first
-                Oscars original song contenders of the year?
-              </p>
-              <p>
-                Earlier this month, it was predicted that Jack Black’s piano
-                ballad “Peaches” could be a dark horse for Song of the Summer,
-                and now, it’s become his first solo hit.
+                The foremost drama on television mirrors the tumultuous dynamics
+                within the television industry itself. Despite Paramount
+                Network's acclaimed Western series, Yellowstone, poised for a
+                smooth ascent to record-breaking viewership, its journey
+                resembles that of an untamed bronco, fiercely resisting control.
               </p>
             </div>
             <div class="card-footer">
               <button>
                 <a
-                  href="https://variety.com/2023/artisans/awards/peaches-song-super-mario-bros-movie-eligible-oscars-1235578312/"
+                  href="https://www.tvguide.com/news/yellowstone-season-5-part-2-returns-when-ending-teaser-everything-else-to-know/"
                   class="button"
                   target="_blank"
                 >
@@ -618,28 +246,28 @@
           <div class="card">
             <div class="card-header">
               <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/776/original/mario-luigi-van.png?1686777427"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/789/original/Untitled_design.png?1707571813"
                 alt=""
                 class="buzz-image"
               />
             </div>
             <div class="card-title">
-              <h4>"Frozen" has been dethroned</h4>
+              <h4>Another Spinoff Coming?</h4>
             </div>
             <div class="card-body">
               <p>
-                The animated video game adaptation has been playing in theaters
-                worldwide for about two months now, and during this time, it has
-                broken numerous box office records. But earlier this week, Super
-                Mario achieved its biggest feat yet, as it passed Frozen to
-                become the second-biggest animated movie of all time at the
-                global box office.
+                Hold your horses, Yellowstone enthusiasts. It appears the
+                Matthew McConaughey-led spinoff might not have left the stable
+                just yet. While initial reports indicated a sequel series would
+                promptly follow Yellowstone's series finale in November 2024, a
+                recent update suggests McConaughey's participation isn't a
+                guaranteed certainty after all.
               </p>
             </div>
             <div class="card-footer">
               <button>
                 <a
-                  href="https://collider.com/the-super-mario-bros-movie-second-biggest-animated-film/"
+                  href="https://www.townandcountrymag.com/leisure/arts-and-culture/a43495073/matthew-mcconaughey-yellowstone-spin-off/"
                   class="button"
                   target="_blank"
                 >
@@ -651,27 +279,28 @@
           <div class="card">
             <div class="card-header">
               <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/787/original/peach-toad.png?1686777820"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/790/original/Untitled_design_%281%29.png?1707571984"
                 alt=""
                 class="buzz-image"
               />
             </div>
             <div class="card-title">
-              <h4>the next best thing to playing the actual game</h4>
+              <h4>Kevin Costner Wants Back In!</h4>
             </div>
             <div class="card-body">
               <p>
-                When "The Super Mario Bros. Movie" opened in theaters earlier
-                this month, the experts were ready to count out the
-                computer-animated film as another disposable video-game
-                byproduct like the colossally awful, 1993 live-action take on
-                the 1985 Nintendo game. Not so fast.
+                Throughout much of 2023, Kevin Costner dominated headlines due
+                to his dispute with the producers of Yellowstone, ultimately
+                leading to his exit from the immensely popular series before its
+                conclusion. A recent report suggests Costner is interested in
+                returning for the show's upcoming final episodes — but whether
+                the show shares this sentiment remains uncertain.
               </p>
             </div>
             <div class="card-footer">
               <button>
                 <a
-                  href="https://www.goodmorningamerica.com/culture/story/review-super-mario-bros-movie-best-thing-playing-98705230"
+                  href="https://tasteofcountry.com/kevon-costner-yellowstone-season-5-return/"
                   class="button"
                   target="_blank"
                 >
@@ -684,159 +313,120 @@
       </section>
 
       <section class="interviews">
-        <h2>Cast Interviews</h2>
-        <div class="grid grid-interviews">
-          <div>
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                Bowser rules with an iron 👊<a
-                  href="https://twitter.com/hashtag/SuperMarioMovie?src=hash&amp;ref_src=twsrc%5Etfw"
-                  >#SuperMarioMovie</a
-                >
-                <a href="https://t.co/fU7y4TSzJZ">pic.twitter.com/fU7y4TSzJZ</a>
+        <h2>The REAL Cowboys of Yellowstone</h2>
+
+        <div class="grid grid-buzz">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/799/original/Untitled_design.png?1707577232"
+                alt=""
+                class="buzz-image"
+              />
+            </div>
+            <div class="card-title"><h4>Taylor Sheridan</h4></div>
+            <div class="card-body">
+              <p>Creator, Character - Travis Wheatley</p>
+              <p>
+                Yellowstone creator Taylor Sheridan is also an actual cowboy in
+                real life. In fact, the creation of Yellowstone is based on
+                Sheridan’s own childhood in Texas, adding some authenticity to
+                the show’s plot.
               </p>
-              &mdash; The Super Mario Bros. Movie (@supermariomovie)
-              <a
-                href="https://twitter.com/supermariomovie/status/1649095587491635203?ref_src=twsrc%5Etfw"
-                >April 20, 2023</a
+
+              <a href="https://screenrant.com/every-real-cowboy-yellowstone"
+                >Read More</a
               >
-            </blockquote>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
+            </div>
+            <div class="card-footer"></div>
           </div>
-          <div>
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                A big hearted bro 💚<a
-                  href="https://twitter.com/hashtag/SuperMarioMovie?src=hash&amp;ref_src=twsrc%5Etfw"
-                  >#SuperMarioMovie</a
-                >
-                <a href="https://t.co/lUkNk9pney">pic.twitter.com/lUkNk9pney</a>
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/801/original/Untitled_design_%281%29.png?1707577877"
+                alt="Lloyd from Yellowstone TV Show"
+                class="buzz-image"
+              />
+            </div>
+            <div class="card-title"><h4>Forrie J. Smith</h4></div>
+            <div class="card-body">
+              <p>Character - Lloyd</p>
+              <p>
+                Smith has had years of cowboy, horse riding, and rodeo
+                experience before his recurring role as Lloyd in Yellowstone.
+                Growing up riding horses at his grandparents’ ranch in
+                Yellowstone’s setting of Montana, Smith is more than qualified
+                as a cowboy.
               </p>
-              &mdash; The Super Mario Bros. Movie (@supermariomovie)
-              <a
-                href="https://twitter.com/supermariomovie/status/1648370807486267404?ref_src=twsrc%5Etfw"
-                >April 18, 2023</a
+
+              <a href="https://screenrant.com/every-real-cowboy-yellowstone"
+                >Read More</a
               >
-            </blockquote>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
+            </div>
+            <div class="card-footer"></div>
           </div>
-          <div>
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                Donkey Kong is always game.<a
-                  href="https://twitter.com/hashtag/SuperMarioMovie?src=hash&amp;ref_src=twsrc%5Etfw"
-                  >#SuperMarioMovie</a
-                >
-                <a href="https://t.co/61AO2EaLUq">pic.twitter.com/61AO2EaLUq</a>
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/802/original/Untitled_design_%282%29.png?1707578578"
+                alt="Jake from Yellowstone TV Show"
+                class="buzz-image"
+              />
+            </div>
+            <div class="card-title"><h4>Jake Ream</h4></div>
+            <div class="card-body">
+              <p>Character - Jake</p>
+              <p>
+                Before working on Yellowstone, Jake Ream worked professionally
+                with horses, having grown up riding horses and eventually
+                creating his own horse training facility in Utah.
               </p>
-              &mdash; The Super Mario Bros. Movie (@supermariomovie)
-              <a
-                href="https://twitter.com/supermariomovie/status/1648733199948709900?ref_src=twsrc%5Etfw"
-                >April 19, 2023</a
+
+              <a href="https://screenrant.com/every-real-cowboy-yellowstone"
+                >Read More</a
               >
-            </blockquote>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-          </div>
-          <div>
-            <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                Catch Toad’s infectious energy.<a
-                  href="https://twitter.com/hashtag/SuperMarioMovie?src=hash&amp;ref_src=twsrc%5Etfw"
-                  >#SuperMarioMovie</a
-                >
-                <a href="https://t.co/JyX3SCbkhW">pic.twitter.com/JyX3SCbkhW</a>
-              </p>
-              &mdash; The Super Mario Bros. Movie (@supermariomovie)
-              <a
-                href="https://twitter.com/supermariomovie/status/1649820358680395781?ref_src=twsrc%5Etfw"
-                >April 22, 2023</a
-              >
-            </blockquote>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
+            </div>
+            <div class="card-footer"></div>
           </div>
         </div>
       </section>
-      <section class="power-ups">
-        <h2>POwer-Ups</h2>
-        <table>
-          <thead>
-            <tr>
-              <th style="width: 20%">Power-up</th>
-              <th style="width: 30%">Transformation</th>
-              <th style="width: 50%">Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Red Mushroom</td>
-              <td>Super Mario</td>
-              <td>
-                When Mario consumes a Super Mushroom, he grows larger and
-                transforms into Super Mario.
-              </td>
-            </tr>
-            <tr>
-              <td>Fire Flower</td>
-              <td>Fire Peach and Fire Donkey Kong</td>
-              <td>
-                Peach transforms into Fire Peach after touching a Fire Flower
-                while Donkey Kong transforms into a fire version of himself. The
-                Fire Flower grants the ability to shoot fireballs.
-              </td>
-            </tr>
-            <tr>
-              <td>Super Start</td>
-              <td>Invincible Mario and Invincible Luigi</td>
-              <td>
-                Under the effects of the Super Star, Mario and Luigi gain
-                increased speed, improved fighting skills, and the ability to
-                blast away oncoming hazards.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="spinoff">
+        <h2>Spinoffs</h2>
+        <div class="grid grid-spinoff">
+          <div>
+            <h3>1883</h3>
+            <p>Starring Faith Hill, Tim McGraw, Sam Elliot & Isabel May</p>
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/cui8FpFpTN8?si=mcOUN4SzzIff2UcK"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div>
+            <h3>1923</h3>
+            <p>Starring Helen Mirren & Harrison Ford</p>
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/7SIXEy4cwiw?si=gEiUy8a8HDvvVvHo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <section class="grid grid-3-columns-with-first-narrow">
         <div>
-          <h3>More about Movie</h3>
-          <ul>
-            <li>
-              <a
-                href="https://www.thesupermariobros.movie/synopsis/"
-                target="_blank"
-                >Synopsis</a
-              >
-            </li>
-            <li>
-              <a href="https://www.thesupermariobros.movie/" target="_blank"
-                >Find Showtimes</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
           <h3>Playlist</h3>
           <iframe
             style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/70vBRGySLw4zWh4sWhTB3T?utm_source=generator"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTQebjaPYhvs?utm_source=generator&theme=0"
             width="100%"
             height="152"
             frameborder="0"
@@ -848,13 +438,19 @@
         <div>
           <h3>About Me</h3>
           <p>
-            Hi! I'm Nicole and my son is a big fan of Mario Bros so I decided to
-            use the movie for a coding workshop project.
+            Hi! I'm Nicole and in this house we watch all things Yellowstone!
+            The spinoffs are amazing! You won't be disappointed by anything in
+            the Yellowstone universe.
           </p>
         </div>
         <div>
           <h3>About this website</h3>
-          <p>This website was built for a coding workshop project.</p>
+          <p>
+            This website was built for a coding challenge at
+            <a href="https://www.shecodes.io/contests/binge-worthy-tv-show"
+              >SheCodes.</a
+            >
+          </p>
         </div>
       </section>
 
